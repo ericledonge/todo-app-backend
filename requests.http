@@ -1,0 +1,29 @@
+
+### Get todos
+GET http://localhost:3000/todos
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJpYXQiOjE2OTQzNzUwODN9.22_-qP7wb8sPthHazM16u4fGdBEYcl1NpU9J-_Ukb4Q
+
+### Sign in
+POST http://localhost:3000/signin
+Content-Type: application/json
+
+{
+  "userId": "1"
+}
+
+### NEW
+GET http://localhost:3000/api/v1/todos
+
+### POST
+POST http://localhost:3000/api/v1/todos
+Content-Type: application/json
+
+{
+  "user_id": "3",
+  "title": "new todo description"
+}
+
+### GET ONE
+GET http://localhost:3000/api/v1/todos/1
+
+
